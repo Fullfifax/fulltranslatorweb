@@ -1,2 +1,8 @@
 textTranslator/__pycache__/
 textTranslator/migrations/__pycache__/
+.idea/fulltranslatorweb.iml
+.idea/misc.xml
+.idea/vcs.xml
+fulltranslatorweb/__pycache__/settings.cpython-310.pyc
+fulltranslatorweb/__pycache__/urls.cpython-310.pyc
+
