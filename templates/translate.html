@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>FulltranslatorWeb</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container">
+         <div class="bg-success">
+            <h2 class="mt-5 mb-5 bg-dark text-center text-light p-2">Fulltranslator using Django :)</h2>
+            <form method="POST" action="{% url 'trans' %}" class="pb-4 px-3">
+               {% csrf_token %}
+               <div class="form-row mt-4">
+                  <div class="col">
+                     <textarea type="text" name="txt" class="form-control" placeholder="Enter Your Text" rows="5" required="required"></textarea>
+                  </div>
+                  <div class="col">
+                     <select id="inputState" class="form-control" name="lang">
+                        <option selected value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="mg">Malagasy</option>
+                     </select>
+                     <p class="m-3 text-capitalize text-light" style="font-size: 1.2em;">{{result}}</p>
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-dark mt-2">Translate</button>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
