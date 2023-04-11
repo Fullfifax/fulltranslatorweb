@@ -1,6 +1,6 @@
 # fulltranslatorweb
 fulltranslatorweb is a simple translator text using django and googletrans
-## - How to lauch this project in your local
+## - How to lauch this project in your local (NB: use virtual env)
 ### 1- Clone this project 
  ``` git clone https://github.com/Fullfifax/fulltranslatorweb.git ```
 ### 2- Browse to directory 
